@@ -6,7 +6,7 @@ public:
         return ans;
     }
     void dfs(vector<int>& ans,int n,int k){
-        //if(k>n) return ;
+        if(k>n) return ;
         if(k!=0)    ans.push_back(k);
         for(int i=0;i<=9;i++){
             if(k*10+i>0&&k*10+i<=n){
